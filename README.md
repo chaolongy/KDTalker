@@ -1,3 +1,4 @@
-<video src="https://github.com/chaolongy/KDTalker/blob/main/assets/comparative.mp4" controls width="600"></video>
 
-<video src="https://github.com/chaolongy/KDTalker/blob/main/assets/cross-identity.mp4" controls width="600"></video>
+
+https://github.com/user-attachments/assets/d7cdd865-c6b3-499c-9556-076dcd3f69dd
+
