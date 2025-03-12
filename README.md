@@ -25,5 +25,5 @@ If you find this code helpful for your research, please cite:
 ```
 
 # Acknowledge
-We acknowledge these works for their public code and selfless help: [SadTalker](https://github.com/OpenTalker/SadTalker), [LivePortrait](https://github.com/KwaiVGI/LivePortrait), [Vid2Vid](https://github.com/NVIDIA/vid2vid) etc.
+We acknowledge these works for their public code and selfless help: [SadTalker](https://github.com/OpenTalker/SadTalker), [LivePortrait](https://github.com/KwaiVGI/LivePortrait), [Face-vid2vid](https://github.com/zhanglonghao1992/One-Shot_Free-View_Neural_Talking_Head_Synthesis) etc.
 </div>
