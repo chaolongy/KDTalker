@@ -25,5 +25,5 @@ If you find this code helpful for your research, please cite:
 ```
 
 # Acknowledge
-We acknowledge these works for their public code and selfless help: [SadTalker](https://github.com/OpenTalker/SadTalker), [LivePortrait](https://github.com/KwaiVGI/LivePortrait), [Vid2Vid](https://github.com/NVIDIA/vid2vid) and so on.
+We acknowledge these works for their public code and selfless help: [SadTalker](https://github.com/OpenTalker/SadTalker), [LivePortrait](https://github.com/KwaiVGI/LivePortrait), [Vid2Vid](https://github.com/NVIDIA/vid2vid) etc.
 </div>
