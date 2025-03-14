@@ -63,7 +63,7 @@ You can download the weights for the face detector, audio extractor and KDTalker
 
 # Inference
 ```
-python inference.py
+python inference.py -source_image ./example/source_image/WDA_BenCardin1_000.png -driven_audio ./example/driven_audio/WDA_BenCardin1_000.wav -output ./results/output.mp4
 ```
 
 
