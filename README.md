@@ -57,7 +57,7 @@ pretrained_weights
     └── retargeting_models
         └── stitching_retargeting_module.pth
 ```
-You can download the weights for the face detector, audio extractor and KDTalker from [Google Drive](https://drive.google.com/drive/). Put them in `./ckpts`.
+You can download the weights for the face detector, audio extractor and KDTalker from [Google Drive](https://drive.google.com/drive/folders/1PRc19E4s6lU7KFd5RF70_rz0BU4OvW57). Put them in `./ckpts`.
 
 
 
