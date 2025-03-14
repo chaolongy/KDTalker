@@ -1,42 +1,37 @@
 # -*- coding: UTF-8 -*-
-import glob
-
 import os
 os.environ['HYDRA_FULL_ERROR']='1'
 os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
+import argparse
 import shutil
 import uuid
 import os
-import cv2
-import tyro
-
 import numpy as np
 from tqdm import tqdm
 import cv2
 from rich.progress import track
+import tyro
 
-from croper import Croper
+
 from PIL import Image
 import time
-
 import torch
 import torch.nn.functional as F
 from torch import nn
 import imageio
 from pydub import AudioSegment
 from pykalman import KalmanFilter
-import scipy
 
 
 from src.config.argument_config import ArgumentConfig
 from src.config.inference_config import InferenceConfig
 from src.config.crop_config import CropConfig
 from src.live_portrait_pipeline import LivePortraitPipeline
-from src.utils.retargeting_utils import calc_eye_close_ratio, calc_lip_close_ratio
 from src.utils.camera import get_rotation_matrix
-from src.utils.video import images2video, concat_frames, get_fps, add_audio_to_video, has_audio_stream
 from dataset_process import audio
+
+from dataset_process.croper import Croper
 
 
 def parse_audio_length(audio_length, sr, fps):
@@ -124,39 +119,32 @@ def dct2device(dct: dict, device):
         dct[key] = torch.tensor(dct[key]).to(device)
     return dct
 
-def save_video_with_watermark(video, audio, save_path, watermark=False):
+def save_video_with_watermark(video, audio, save_path):
     temp_file = str(uuid.uuid4())+'.mp4'
     cmd = r'ffmpeg -y -i "%s" -i "%s" -vcodec copy "%s"' % (video, audio, temp_file)
     os.system(cmd)
-
-    if watermark is False:
-        shutil.move(temp_file, save_path)
-    else:
-        # watermark
-        cmd = r'ffmpeg -y -hide_banner -i "%s" -i "%s" -filter_complex "[1]scale=100:-1[wm];[0][wm]overlay=(main_w-overlay_w)-10:10" "%s"' % (temp_file, watarmark_path, save_path)
-        os.system(cmd)
-        os.remove(temp_file)
+    shutil.move(temp_file, save_path)
 
 class Inferencer(object):
-    def __init__(self, ckpt_path, norm_info_path):
+    def __init__(self):
         st=time.time()
         print('#'*25+'Start initialization'+'#'*25)
         self.device = 'cuda'
 
         from model import get_model
         self.point_diffusion = get_model()
-        ckpt = torch.load(ckpt_path)
+        ckpt = torch.load('KDTalker.pth')
 
         self.point_diffusion.load_state_dict(ckpt['model'])
         self.point_diffusion.eval()
         self.point_diffusion.to(self.device)
 
-        lm_croper_checkpoint = os.path.join('dataset_process/ckpts/', 'shape_predictor_68_face_landmarks.dat')
+        lm_croper_checkpoint = 'ckpts/shape_predictor_68_face_landmarks.dat'
         self.croper = Croper(lm_croper_checkpoint)
 
-        self.norm_info = dict(np.load(norm_info_path))
+        self.norm_info = dict(np.load('dataset_process/norm.npz'))
 
-        wav2lip_checkpoint = 'dataset_process/ckpts/wav2lip.pth'
+        wav2lip_checkpoint = 'ckpts/wav2lip.pth'
         self.wav2lip_model = AudioEncoder(wav2lip_checkpoint, 'cuda')
         self.wav2lip_model.cuda()
         self.wav2lip_model.eval()
@@ -271,7 +259,6 @@ class Inferencer(object):
 
         outputs = [input_x]
 
-        st = time.time()
         sample_frame = 64
         for i in range(0, aud_feat.shape[0] - 1, sample_frame):
             input_mel = torch.Tensor(aud_feat[i: i + sample_frame]).unsqueeze(0).cuda()
@@ -383,10 +370,14 @@ class Inferencer(object):
 
 
 if __name__ == '__main__':
-    ckpt_path = "path for model ckptpoint"
-    norm_info_path = "path for data norm"
-    Infer = Inferencer(ckpt_path, norm_info_path)
-    image_path = 'path for refenrence image'
-    audio_path = 'path for driven audio'
-    save_path = 'path for save'
-    Infer.generate_with_audio_img(image_path, audio_path, save_path)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-source_image", type=str, default="example/source_image/WDA_BenCardin1_000.png",
+                        help="source image")
+    parser.add_argument("-driven_audio", type=str, default="example/driven_audio/WDA_BenCardin1_000.wav",
+                        help="driving audio")
+    parser.add_argument("-output", type=str, default="results/output.mp4", help="output video file name", )
+
+    args = parser.parse_args()
+
+    Infer = Inferencer()
+    Infer.generate_with_audio_img(args.source_image, args.driven_audio, args.output)
