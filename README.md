@@ -19,19 +19,26 @@ https://github.com/user-attachments/assets/08ebc6e0-41c5-4bf4-8ee8-2f7d317d92cd
 Our KDTalker could be conducted on one RTX4090 or RTX3090.
 
 ### 1. Clone the code and prepare the environment
+
+**Note:** Make sure your system has [`git`](https://git-scm.com/), [`conda`](https://anaconda.org/anaconda/conda), and [`FFmpeg`](https://ffmpeg.org/download.html) installed.
+
 ```
 git clone https://github.com/chaolongy/KDTalker
 cd KDTalker
 
+# create env using conda
 conda create -n KDTalker python=3.9
 conda activate KDTalker
+
 pip install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cu118
 conda install pytorch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 pytorch-cuda=11.8 -c pytorch -c nvidia
+
 pip install -r requirements.txt
 ```
 
 ### 2. Download pretrained weights
-First, you can download all LiverPorait pretrained weights from [Google Drive](https://drive.google.com/drive/folders/1UtKgzKjFAOmZkhNK-OYT0caJ_w2XAnib) or [Baidu Yun](https://pan.baidu.com/s/1MGctWmNla_vZxDbEp2Dtzw?pwd=z5cn). Unzip and place them in `./dataset_process/pretrained_weights`.
+
+First, you can download all LiverPorait pretrained weights from [Google Drive](https://drive.google.com/drive/folders/1UtKgzKjFAOmZkhNK-OYT0caJ_w2XAnib) or [Baidu Yun](https://pan.baidu.com/s/1MGctWmNla_vZxDbEp2Dtzw?pwd=z5cn). Unzip and place them in `./pretrained_weights`.
 Ensuring the directory structure is as follows:
 ```text
 pretrained_weights
@@ -50,7 +57,7 @@ pretrained_weights
     └── retargeting_models
         └── stitching_retargeting_module.pth
 ```
-Second, you can download KDTalker weights from [Google Drive](https://drive.google.com/drive/). Put it in `./dtaset_process/ckpts`.
+You can download the weights for the face detector, audio extractor and KDTalker from [Google Drive](https://drive.google.com/drive/). Put them in `./ckpts`.
 
 
 
