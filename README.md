@@ -13,7 +13,7 @@ https://github.com/user-attachments/assets/08ebc6e0-41c5-4bf4-8ee8-2f7d317d92cd
 
 
 # Demo
-
+Coming soon. (About 2025.03.16)
 
 # Environment
 Our KDTalker could be conducted on one RTX4090 or RTX3090.
