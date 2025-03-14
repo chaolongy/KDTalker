@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 ### 2. Download pretrained weights
 
-First, you can download all LiverPorait pretrained weights from [Google Drive](https://drive.google.com/drive/folders/1UtKgzKjFAOmZkhNK-OYT0caJ_w2XAnib) or [Baidu Yun](https://pan.baidu.com/s/1MGctWmNla_vZxDbEp2Dtzw?pwd=z5cn). Unzip and place them in `./pretrained_weights`.
+First, you can download all LiverPorait pretrained weights from [Google Drive](https://drive.google.com/drive/folders/1UtKgzKjFAOmZkhNK-OYT0caJ_w2XAnib). Unzip and place them in `./pretrained_weights`.
 Ensuring the directory structure is as follows:
 ```text
 pretrained_weights
@@ -57,7 +57,7 @@ pretrained_weights
     └── retargeting_models
         └── stitching_retargeting_module.pth
 ```
-You can download the weights for the face detector, audio extractor and KDTalker from [Google Drive](https://drive.google.com/drive/folders/1PRc19E4s6lU7KFd5RF70_rz0BU4OvW57). Put them in `./ckpts`.
+You can download the weights for the face detector, audio extractor and KDTalker from [Google Drive](https://drive.google.com/drive/folders/1OkfiFArUCsnkF_0tI2SCEAwVCBLSjzd6). Put them in `./ckpts`.
 
 
 
