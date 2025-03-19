@@ -5,7 +5,26 @@
 [![License](https://img.shields.io/badge/license-CC--BY--NC%204.0-green)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![GitHub Stars](https://img.shields.io/github/stars/chaolongy/KDTalker?style=social)](https://github.com/chaolongy/KDTalker)
 
+<div>
+    <a href='https://chaolongy.github.io/' target='_blank'>Chaolong Yang <sup>1,3*</sup> </a>&emsp;
+    <a href='https://kaiseem.github.io/' target='_blank'>Kai Yao <sup>2*</a>&emsp;
+    <a href='https://scholar.xjtlu.edu.cn/en/persons/YuyaoYan' target='_blank'>Yuyao Yan <sup>3</sup> </a>&emsp;
+    <a href='https://scholar.google.com/citations?hl=zh-CN&user=HDO58yUAAAAJ' target='_blank'>Chenru Jiang <sup>4</sup> </a>&emsp;
+    <a href='https://weiguangzhao.github.io/' target='_blank'>Weiguang Zhao <sup>1,3</sup> </a>&emsp; </br>
+    <a href='https://scholar.google.com.hk/citations?hl=zh-CN&user=c-x5M2QAAAAJ' target='_blank'>Jie Sun <sup>3</sup> </a>&emsp;
+    <a href='https://sites.google.com/view/guangliangcheng' target='_blank'>Guangliang Cheng <sup>1</sup> </a>&emsp;
+    <a href='https://cn.linkedin.com/in/yifei-zhang-44624839' target='_blank'>Yifei Zhang <sup>5</sup> </a>&emsp;
+    <a href='https://cn.linkedin.com/in/bin-dong-56014621' target='_blank'>Bin Dong <sup>4</sup> </a>&emsp;
+    <a href='https://sites.google.com/view/kaizhu-huang-homepage/home' target='_blank'>Kaizhu Huang <sup>4</sup> </a>&emsp;
 </div>
+<br>
+    
+<div>
+    <sup>1</sup> University of Liverpool &emsp; <sup>2</sup> Ant Group &emsp; <sup>3</sup> Xi’an Jiaotong-Liverpool University &emsp; </br>
+    <sup>4</sup> Duke Kunshan University &emsp; <sup>5</sup> Ricoh Software Research Center &emsp 
+</div>
+
+
 <div align="justify">
 
 # Comparative videos
