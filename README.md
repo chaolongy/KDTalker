@@ -11,10 +11,10 @@
     <a href='https://scholar.xjtlu.edu.cn/en/persons/YuyaoYan' target='_blank'>Yuyao Yan <sup>3</sup> </a>&emsp;
     <a href='https://scholar.google.com/citations?hl=zh-CN&user=HDO58yUAAAAJ' target='_blank'>Chenru Jiang <sup>4</sup> </a>&emsp;
     <a href='https://weiguangzhao.github.io/' target='_blank'>Weiguang Zhao <sup>1,3</sup> </a>&emsp; </br>
-    <a href='https://scholar.google.com.hk/citations?hl=zh-CN&user=c-x5M2QAAAAJ' target='_blank'>Jie Sun <sup>3</sup> </a>&emsp;
+    <a href='https://scholar.google.com/citations?hl=zh-CN&user=c-x5M2QAAAAJ' target='_blank'>Jie Sun <sup>3</sup> </a>&emsp;
     <a href='https://sites.google.com/view/guangliangcheng' target='_blank'>Guangliang Cheng <sup>1</sup> </a>&emsp;
-    <a href='https://cn.linkedin.com/in/yifei-zhang-44624839' target='_blank'>Yifei Zhang <sup>5</sup> </a>&emsp;
-    <a href='https://cn.linkedin.com/in/bin-dong-56014621' target='_blank'>Bin Dong <sup>4</sup> </a>&emsp;
+    <a href='https://scholar.google.com/schhp?hl=zh-CN' target='_blank'>Yifei Zhang <sup>5</sup> </a>&emsp;
+    <a href='https://scholar.google.com/citations?hl=zh-CN&user=JNRMVNYAAAAJ&view_op=list_works&sortby=pubdate' target='_blank'>Bin Dong <sup>4</sup> </a>&emsp;
     <a href='https://sites.google.com/view/kaizhu-huang-homepage/home' target='_blank'>Kaizhu Huang <sup>4</sup> </a>&emsp;
 </div>
 <br>
