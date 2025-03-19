@@ -21,7 +21,7 @@
     
 <div>
     <sup>1</sup> University of Liverpool &emsp; <sup>2</sup> Ant Group &emsp; <sup>3</sup> Xi’an Jiaotong-Liverpool University &emsp; </br>
-    <sup>4</sup> Duke Kunshan University &emsp; <sup>5</sup> Ricoh Software Research Center &emsp 
+    <sup>4</sup> Duke Kunshan University &emsp; <sup>5</sup> Ricoh Software Research Center &emsp;
 </div>
 
 
