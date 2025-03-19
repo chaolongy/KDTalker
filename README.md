@@ -1,7 +1,7 @@
 <div align="center">
 
 # Unlock Pose Diversity: Accurate and Efficient Implicit Keypoint-based Spatiotemporal Diffusion for Audio-driven Talking Portrait
-[![arXiv](https://img.shields.io/badge/arXiv-KDTalker-9065CA.svg?logo=arXiv)](http://arxiv.org/abs/)
+[![arXiv](https://img.shields.io/badge/arXiv-KDTalker-9065CA.svg?logo=arXiv)](https://arxiv.org/abs/2503.12963)
 [![License](https://img.shields.io/badge/license-CC--BY--NC%204.0-green)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![GitHub Stars](https://img.shields.io/github/stars/chaolongy/KDTalker?style=social)](https://github.com/chaolongy/KDTalker)
 
@@ -13,6 +13,8 @@ https://github.com/user-attachments/assets/08ebc6e0-41c5-4bf4-8ee8-2f7d317d92cd
 
 
 # Demo
+Graido Demo [`git`](https://kdtalker.com/).
+![shot](https://github.com/user-attachments/assets/810e9dc8-ab66-4187-ab4f-bf92759621fa)
 
 
 # Environment
@@ -38,7 +40,7 @@ pip install -r requirements.txt
 
 ### 2. Download pretrained weights
 
-First, you can download all LiverPorait pretrained weights from [Google Drive](https://drive.google.com/drive/folders/1UtKgzKjFAOmZkhNK-OYT0caJ_w2XAnib) or [Baidu Yun](https://pan.baidu.com/s/1MGctWmNla_vZxDbEp2Dtzw?pwd=z5cn). Unzip and place them in `./pretrained_weights`.
+First, you can download all LiverPorait pretrained weights from [Google Drive](https://drive.google.com/drive/folders/1UtKgzKjFAOmZkhNK-OYT0caJ_w2XAnib). Unzip and place them in `./pretrained_weights`.
 Ensuring the directory structure is as follows:
 ```text
 pretrained_weights
@@ -57,7 +59,7 @@ pretrained_weights
     └── retargeting_models
         └── stitching_retargeting_module.pth
 ```
-You can download the weights for the face detector, audio extractor and KDTalker from [Google Drive](https://drive.google.com/drive/). Put them in `./ckpts`.
+You can download the weights for the face detector, audio extractor and KDTalker from [Google Drive](https://drive.google.com/drive/folders/1OkfiFArUCsnkF_0tI2SCEAwVCBLSjzd6?hl=zh-CN). Put them in `./ckpts`.
 
 
 
@@ -74,7 +76,15 @@ Our code is under the CC-BY-NC 4.0 license and intended solely for research purp
 # Citation
 If you find this code helpful for your research, please cite:
 ```
-
+@misc{yang2025kdtalker,
+      title={Unlock Pose Diversity: Accurate and Efficient Implicit Keypoint-based Spatiotemporal Diffusion for Audio-driven Talking Portrait}, 
+      author={Chaolong Yang and Kai Yao and Yuyao Yan and Chenru Jiang and Weiguang Zhao and Jie Sun and Guangliang Cheng and Yifei Zhang and Bin Dong and Kaizhu Huang},
+      year={2025},
+      eprint={2503.12963},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2503.12963}, 
+}
 ```
 
 
