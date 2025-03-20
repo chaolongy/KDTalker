@@ -52,7 +52,6 @@ cd KDTalker
 conda create -n KDTalker python=3.9
 conda activate KDTalker
 
-pip install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cu118
 conda install pytorch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 pytorch-cuda=11.8 -c pytorch -c nvidia
 
 pip install -r requirements.txt
