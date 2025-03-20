@@ -81,6 +81,8 @@ pretrained_weights
 ```
 You can download the weights for the face detector, audio extractor and KDTalker from [Google Drive](https://drive.google.com/drive/folders/1OkfiFArUCsnkF_0tI2SCEAwVCBLSjzd6?hl=zh-CN). Put them in `./ckpts`.
 
+OR, you can download above all weights in [Huggingface](https://huggingface.co/ChaolongYang/KDTalker/tree/main).
+
 
 
 # Inference
