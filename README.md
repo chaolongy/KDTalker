@@ -32,7 +32,7 @@ https://github.com/user-attachments/assets/08ebc6e0-41c5-4bf4-8ee8-2f7d317d92cd
 
 
 # Demo
-Graido Demo [`KDTalker`](https://kdtalker.com/).
+Gradio Demo [`KDTalker`](https://kdtalker.com/).
 
 ![shot](https://github.com/user-attachments/assets/810e9dc8-ab66-4187-ab4f-bf92759621fa)
 
