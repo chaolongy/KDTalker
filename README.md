@@ -36,6 +36,10 @@ Gradio Demo [`KDTalker`](https://kdtalker.com/).
 
 ![shot](https://github.com/user-attachments/assets/810e9dc8-ab66-4187-ab4f-bf92759621fa)
 
+# To Do List
+- [ ] Train a community version using more datasets
+- [ ] Release training code
+
 
 # Environment
 Our KDTalker could be conducted on one RTX4090 or RTX3090.
