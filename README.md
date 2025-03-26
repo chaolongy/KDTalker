@@ -116,3 +116,7 @@ If you find this code helpful for your research, please cite:
 # Acknowledge
 We acknowledge these works for their public code and selfless help: [SadTalker](https://github.com/OpenTalker/SadTalker), [LivePortrait](https://github.com/KwaiVGI/LivePortrait), [Wav2Lip](https://github.com/Rudrabha/Wav2Lip), [Face-vid2vid](https://github.com/zhanglonghao1992/One-Shot_Free-View_Neural_Talking_Head_Synthesis) etc.
 </div>
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=chaolongy/KDTalker&type=Date)](https://www.star-history.com/#chaolongy/KDTalker&Date)
