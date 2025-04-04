@@ -1,5 +1,6 @@
 <div align="center">
-
+<img src='https://github.com/user-attachments/assets/3fdf69a7-e2db-4c61-aad0-109e6ccc51fa' width='600px'/>
+    
 # Unlock Pose Diversity: Accurate and Efficient Implicit Keypoint-based Spatiotemporal Diffusion for Audio-driven Talking Portrait
 [![arXiv](https://img.shields.io/badge/arXiv-KDTalker-9065CA.svg?logo=arXiv)](https://arxiv.org/abs/2503.12963)
 [![License](https://img.shields.io/badge/license-CC--BY--NC%204.0-green)](https://creativecommons.org/licenses/by-nc/4.0/)
@@ -27,6 +28,10 @@
 
 <div align="justify">
 
+# News
+[2025.03.14] Release paper version demo and inference code.
+
+
 # Comparative videos
 https://github.com/user-attachments/assets/08ebc6e0-41c5-4bf4-8ee8-2f7d317d92cd
 
@@ -35,6 +40,8 @@ https://github.com/user-attachments/assets/08ebc6e0-41c5-4bf4-8ee8-2f7d317d92cd
 Gradio Demo [`KDTalker`](https://kdtalker.com/). The model was trained using only 4,282 video clips from [`VoxCeleb`](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/).
 
 ![shot](https://github.com/user-attachments/assets/810e9dc8-ab66-4187-ab4f-bf92759621fa)
+
+
 
 # To Do List
 - [ ] Train a community version using more datasets
