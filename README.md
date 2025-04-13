@@ -30,6 +30,7 @@
 
 # News
 [2025.04.13] A more powerful TTS has been updated in our local deployment [`KDTalker`](https://kdtalker.com/).
+
 [2025.03.14] Release paper version demo and inference code.
 
 
