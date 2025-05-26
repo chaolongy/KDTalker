@@ -29,6 +29,8 @@
 <div align="justify">
 
 # News
+[2025.05.26] Important update! New models and new functions have been updated to local deployment [`KDTalker`](https://kdtalker.com/). New functions include background replacement and expression editing. 
+
 [2025.04.13] A more powerful TTS has been updated in our local deployment [`KDTalker`](https://kdtalker.com/).
 
 [2025.03.14] Release paper version demo and inference code.
@@ -47,7 +49,7 @@ You can also visit the demo deployed on [`Huggingface`](https://huggingface.co/s
 
 
 # To Do List
-- [ ] Train a community version using more datasets
+- [x] Train a community version using more datasets
 - [ ] Release training code
 
 
