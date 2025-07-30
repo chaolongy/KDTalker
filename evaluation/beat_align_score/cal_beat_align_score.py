@@ -81,7 +81,7 @@ def main(video_path, sigma=0.1):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("-video_root", type=str, default="")
-    parser.add_argument("-output_txt_name", type=str, default='result_GT.txt')
+    parser.add_argument("-output_txt_name", type=str, default='result.txt')
 
     args = parser.parse_args()
 
