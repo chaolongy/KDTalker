@@ -29,6 +29,8 @@
 <div align="justify">
 
 # News
+[2025.07.30] Training and evaluation codes have been released.
+
 [2025.05.26] Important update! New models and new functions have been updated to local deployment [`KDTalker`](https://kdtalker.com/). New functions include background replacement and expression editing. 
 
 [2025.04.13] A more powerful TTS has been updated in our local deployment [`KDTalker`](https://kdtalker.com/).
@@ -41,16 +43,11 @@ https://github.com/user-attachments/assets/08ebc6e0-41c5-4bf4-8ee8-2f7d317d92cd
 
 
 # Demo
-Local deployment(4090) demo [`KDTalker`](https://kdtalker.com/). The model was trained using only 4,282 video clips from [`VoxCeleb`](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/).
+Local deployment(4090) demo [`KDTalker`](https://kdtalker.com/). 
 
 You can also visit the demo deployed on [`Huggingface`](https://huggingface.co/spaces/ChaolongYang/KDTalker), where inference is slower due to ZeroGPU.
 
-![shot](https://github.com/user-attachments/assets/810e9dc8-ab66-4187-ab4f-bf92759621fa)
-
-
-# To Do List
-- [x] Train a community version using more datasets
-- [ ] Release training code
+<img width="2789" height="1553" alt="Demo" src="https://github.com/user-attachments/assets/387c9cab-4d79-48b2-96d7-f9271fe9f1d6" />
 
 
 # Environment
@@ -99,12 +96,52 @@ You can download the weights for the face detector, audio extractor and KDTalker
 OR, you can download above all weights in [Huggingface](https://huggingface.co/ChaolongYang/KDTalker/tree/main).
 
 
+# Training
+
+### 1. Data processing
+```
+python ./dataset_process/extract_motion_dataset.py -mp4_root ./path_to_your_video_root
+```
+
+### 2. Calculate data norm
+```
+python ./dataset_process/cal_norm.py
+```
+
+### 3. Configure wandb and train
+Please configure your own "WANDB_API_KEY" on `./config/structured.py`. Then execute the code `./main.py`
+```
+python main.py
+```
+
 
 # Inference
 ```
 python inference.py -source_image ./example/source_image/WDA_BenCardin1_000.png -driven_audio ./example/driven_audio/WDA_BenCardin1_000.wav -output ./results/output.mp4
 ```
 
+
+# Evaluation
+
+### 1. Diversity
+
+First, please download the Hopenet pretrained weights from [Google Drive](https://drive.google.com/file/d/1m25PrSE7g9D2q2XJVMR6IA7RaCvWSzCR/view). Put it in `./evaluation/deep-head-pose/`, and then execute the code `./evaluation/deep-head-pose/test_on_video_dlib.py`.
+```
+python test_on_video_dlib.py -video ./path_to_your_video_root
+```
+
+Finally, calculating the standard deviation.
+```
+python cal_std.py
+```
+
+### 2. Beat align
+```
+python cal_beat_align_score.py -video_root ./path_to_your_video_root
+```
+
+### 3. LSE-C and LSE-D
+Please configure it as follows: [Wav2lip](https://github.com/Rudrabha/Wav2Lip/tree/master/evaluation).
 
 # Contact
 Our code is under the CC-BY-NC 4.0 license and intended solely for research purposes. If you have any questions or wish to use it for commercial purposes, please contact us at chaolong.yang@liverpool.ac.uk
@@ -126,7 +163,7 @@ If you find this code helpful for your research, please cite:
 
 
 # Acknowledge
-We acknowledge these works for their public code and selfless help: [SadTalker](https://github.com/OpenTalker/SadTalker), [LivePortrait](https://github.com/KwaiVGI/LivePortrait), [Wav2Lip](https://github.com/Rudrabha/Wav2Lip), [Face-vid2vid](https://github.com/zhanglonghao1992/One-Shot_Free-View_Neural_Talking_Head_Synthesis) etc.
+We acknowledge these works for their public code and selfless help: [SadTalker](https://github.com/OpenTalker/SadTalker), [LivePortrait](https://github.com/KwaiVGI/LivePortrait), [Wav2Lip](https://github.com/Rudrabha/Wav2Lip), [Face-vid2vid](https://github.com/zhanglonghao1992/One-Shot_Free-View_Neural_Talking_Head_Synthesis), [deep-head-pose](https://github.com/natanielruiz/deep-head-pose), [Bailando](https://github.com/lisiyao21/Bailando), etc.
 </div>
 
 ## Star History
