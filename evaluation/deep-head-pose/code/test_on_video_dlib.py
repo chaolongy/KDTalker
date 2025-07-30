@@ -23,7 +23,7 @@ def parse_args():
     parser.add_argument('--face_model', dest='face_model', help='Path of DLIB face detection model.',
           default='evaluation/deep-head-pose/code/mmod_human_face_detector.dat', type=str)
     parser.add_argument('--video', dest='video_path', help='Path of video', default='')
-    parser.add_argument('--out_dir', default='output')
+    parser.add_argument('--out_dir', default='evaluation/deep-head-pose/code/output')
     parser.add_argument('--n_frames', dest='n_frames', help='Number of frames', type=int, default=200)
     parser.add_argument('--fps', dest='fps', help='Frames per second of source video', type=float, default=25.)
     args = parser.parse_args()

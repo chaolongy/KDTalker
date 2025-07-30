@@ -2,7 +2,7 @@ import numpy as np
 import os
 import glob
 
-npy_root = ''   # extract from Hopenet
+npy_root = 'evaluation/deep-head-pose/code/output'
 npy_paths = glob.glob(os.path.join("npy_root", '*.npy'))
 
 yaw_std_list = []
