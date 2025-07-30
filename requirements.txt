@@ -41,4 +41,4 @@ torch_ema==0.3
 warmup_scheduler==0.3
 yacs==0.1.8
 numpy==1.24.4
-dlib==19.24.99
+dlib==19.24.6
