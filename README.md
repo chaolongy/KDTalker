@@ -29,11 +29,11 @@
 <div align="justify">
 
 # News
-[2025.09.03] Our paper was accepted by the International Journal of Computer Vision (IJCV).
+[2025.09.03] Our paper was accepted by the **International Journal of Computer Vision (IJCV)**.
 
 [2025.07.30] Training and evaluation codes have been released.
 
-[2025.07.03] Our demo KDTalker++ was accepted by the 2025 ACM Multimedia Demo and Video Track.
+[2025.07.03] Our demo **KDTalker++** was accepted by the **2025 ACM Multimedia Demo and Video Track**.
 
 [2025.05.26] Important update! New models and new functions have been updated to local deployment [`KDTalker`](https://kdtalker.com/). New functions include background replacement and expression editing. 
 
