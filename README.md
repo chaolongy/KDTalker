@@ -2,7 +2,7 @@
 <img src='https://github.com/user-attachments/assets/3fdf69a7-e2db-4c61-aad0-109e6ccc51fa' width='600px'/>
     
 # Unlock Pose Diversity: Accurate and Efficient Implicit Keypoint-based Spatiotemporal Diffusion for Audio-driven Talking Portrait
-[![arXiv](https://img.shields.io/badge/arXiv-KDTalker-9065CA.svg?logo=arXiv)](https://arxiv.org/abs/2503.12963)
+[![Paper](https://img.shields.io/badge/Paper-KDTalker-F59E0B.svg?logo=doi&logoColor=white&labelColor=1E3A8A)](https://doi.org/10.1007/s11263-025-02695-x)
 [![License](https://img.shields.io/badge/license-CC--BY--NC%204.0-green)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![GitHub Stars](https://img.shields.io/github/stars/chaolongy/KDTalker?style=social)](https://github.com/chaolongy/KDTalker)
 
@@ -154,14 +154,36 @@ Our code is under the CC-BY-NC 4.0 license and intended solely for research purp
 # Citation
 If you find this code helpful for your research, please cite:
 ```
-@misc{yang2025kdtalker,
-      title={Unlock Pose Diversity: Accurate and Efficient Implicit Keypoint-based Spatiotemporal Diffusion for Audio-driven Talking Portrait}, 
-      author={Chaolong Yang and Kai Yao and Yuyao Yan and Chenru Jiang and Weiguang Zhao and Jie Sun and Guangliang Cheng and Yifei Zhang and Bin Dong and Kaizhu Huang},
-      year={2025},
-      eprint={2503.12963},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2503.12963}, 
+@article{Yang2026,
+  author  = {Yang, Chaolong and Yao, Kai and Yan, Yuyao and Jiang, Chenru and Zhao, Weiguang and Sun, Jie and Cheng, Guangliang and Zhang, Yifei and Dong, Bin and Huang, Kaizhu},
+  title   = {Unlock Pose Diversity: Accurate and Efficient Implicit Keypoint-based Spatiotemporal Diffusion for Audio-driven Talking Portrait},
+  journal = {International Journal of Computer Vision},
+  year    = {2026},
+  volume  = {134},
+  number  = {3},
+  pages   = {111},
+  doi     = {10.1007/s11263-025-02695-x},
+  url     = {https://doi.org/10.1007/s11263-025-02695-x},
+  issn    = {1573-1405},
+  date    = {2026-02-06},
+}
+
+
+@inproceedings{Yang2025,
+  author = {Yang, Chaolong and Guo, Yinuo and Yao, Kai and Yan, Yuyao and Sun, Jie and Huang, Kaizhu},
+  title = {KDTalker++: Controllable Talking Portrait Generation with Audio, Text, and Expression Editing},
+  year = {2025},
+  isbn = {9798400720352},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3746027.3754462},
+  doi = {10.1145/3746027.3754462},
+  booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia},
+  pages = {13486–13488},
+  numpages = {3},
+  keywords = {audio-driven, diffusion, talking portrait generation},
+  location = {Dublin, Ireland},
+  series = {MM '25}
 }
 ```
 
